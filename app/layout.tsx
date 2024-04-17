@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/contexts/theme";
 import { cn } from "@/lib/utils";
 
 import "./globals.css";
+import Navbar from "@/components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,7 +35,12 @@ export default function RootLayout({
                     enableSystem
                     disableTransitionOnChange
                 >
-                    {children}
+                    <main className="flex flex-col items-center w-full">
+                        <div className="flex flex-col max-w-[1400px] w-full gap-4">
+                            <Navbar />
+                            {children}
+                        </div>
+                    </main>
                 </ThemeProvider>
             </body>
         </html>

@@ -46,4 +46,19 @@ const Monitor = (props: SVGProps<SVGSVGElement>) => {
     );
 };
 
-export { Sun, Moon, Monitor };
+const Nord = (props: SVGProps<SVGSVGElement>) => {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 500 450"
+            {...props}
+        >
+            <polygon
+                fill="currentColor"
+                points="500 450 343.75 450 125 56.25 62.5 56.25 62.5 393.75 125 394.88 203.75 239.63 233.75 295.88 156.25 450 0 450 0 0 156.25 0 377.5 393.75 437.5 393.75 437.5 56.25 375 56.25 297.5 210.38 266.25 155.25 343.75 0 500 0 500 450"
+            />
+        </svg>
+    );
+};
+
+export { Sun, Moon, Monitor, Nord };
