@@ -19,7 +19,7 @@ export default function Home() {
                         applications.
                     </span>
                 </div>
-                <div className="flex flex-row items-center gap-4">
+                <div className="flex flex-row items-center gap-3">
                     <Link href="/projects">
                         <Button>Our Work</Button>
                     </Link>
@@ -28,7 +28,7 @@ export default function Home() {
                         <TooltipContent sideOffset={10}>
                             Coming Soon
                         </TooltipContent>
-                        <TooltipTrigger>
+                        <TooltipTrigger asChild>
                             <Button variant="secondary" disabled>
                                 Contact us
                             </Button>
