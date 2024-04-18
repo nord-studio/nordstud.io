@@ -7,16 +7,8 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-  ],
-  prefix: "",
-  theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
+	],
+	theme: {
     extend: {
       keyframes: {
         "accordion-down": {
@@ -32,7 +24,11 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-    },
+			spacing: {
+				"screen-w-nav": "calc(100vh - 61px)",
+				snug: "calc(100vh - 61px - 2rem)",
+			}
+		},
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config
