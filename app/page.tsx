@@ -75,7 +75,11 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="grid grid-cols-3 grid-flow-row gap-4 w-full">
-                    <button className="w-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start col-span-2">
+                    <Link
+                        href="https://campsite.chat"
+                        target="_blank"
+                        className="w-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start col-span-2 "
+                    >
                         <div className="top-0 left-0 right-0 w-full backdrop-blur">
                             <div className="absolute top-0 w-full p-6">
                                 <h1 className="text-3xl font-bold text-white">
@@ -98,7 +102,7 @@ export default function Home() {
                                 </p>
                             </div>
                         </div>
-                    </button>
+                    </Link>
                     <div className="flex flex-col gap-4 items-center">
                         <button className="w-full h-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start">
                             <div className="top-0 left-0 right-0 w-full backdrop-blur">
@@ -124,7 +128,10 @@ export default function Home() {
                                 </div>
                             </div>
                         </button>
-                        <button className="w-full h-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start">
+                        <Link
+                            href="/history"
+                            className="w-full h-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start"
+                        >
                             <div className="top-0 left-0 right-0 w-full backdrop-blur">
                                 <div className="absolute top-0 w-full p-6">
                                     <h1 className="text-3xl font-bold text-white">
@@ -147,7 +154,7 @@ export default function Home() {
                                     </p>
                                 </div>
                             </div>
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

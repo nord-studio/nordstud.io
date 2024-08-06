@@ -64,7 +64,7 @@ export default function PageSwitch() {
 
         setClipPaths(newClipPaths);
         setHidden(false);
-    }, [tabs]);
+    }, [tabs, path]);
 
     const getClipPath = (i: number) => {
         if (clipPaths.length === 0) return "";
