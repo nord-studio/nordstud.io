@@ -22,6 +22,10 @@ export default function PageSwitch() {
                 url: "/",
             },
             {
+                label: "History",
+                url: "/history",
+            },
+            {
                 label: "Projects",
                 url: "/projects",
             },
@@ -35,12 +39,16 @@ export default function PageSwitch() {
 
     useEffect(() => {
         switch (path) {
-            case "/projects": {
+            case "/history": {
                 setActive(1);
                 break;
             }
-            case "/blog": {
+            case "/projects": {
                 setActive(2);
+                break;
+            }
+            case "/blog": {
+                setActive(3);
                 break;
             }
         }

@@ -100,7 +100,7 @@ export default function Home() {
                         </div>
                     </button>
                     <div className="flex flex-col gap-4 items-center">
-                        <button className="w-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start">
+                        <button className="w-full h-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start">
                             <div className="top-0 left-0 right-0 w-full backdrop-blur">
                                 <div className="absolute top-0 w-full p-6">
                                     <h1 className="text-3xl font-bold text-white">
@@ -124,20 +124,20 @@ export default function Home() {
                                 </div>
                             </div>
                         </button>
-                        <button className="w-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start">
+                        <button className="w-full h-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start">
                             <div className="top-0 left-0 right-0 w-full backdrop-blur">
                                 <div className="absolute top-0 w-full p-6">
                                     <h1 className="text-3xl font-bold text-white">
-                                        Campsite
+                                        History
                                     </h1>
                                 </div>
                             </div>
                             <Image
-                                src="/campsite-banner.png"
+                                src="/history/banner.png"
                                 alt="blog post"
                                 height={400}
                                 width={800}
-                                className="flex-1 w-full h-full object-cover rounded-lg"
+                                className="w-full h-full object-center object-cover rounded-lg"
                             />
                             <div className="bottom-0 left-0 right-0 w-full backdrop-blur">
                                 <div className="absolute bottom-0 w-full p-4 text-white">
