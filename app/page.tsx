@@ -6,7 +6,7 @@ import { Balancer } from "react-wrap-balancer";
 export default function Home() {
     return (
         <main className="flex flex-col items-center justify-center w-full">
-            <div className="flex flex-col gap-8 px-2 py-8 w-full">
+            <div className="flex flex-col gap-8 px-6 py-8 w-full">
                 <div className="flex flex-row gap-2 sm:gap-4">
                     <div className="flex flex-col items-start">
                         <small className="text-sm text-neutral-500">
@@ -74,11 +74,11 @@ export default function Home() {
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-3 grid-flow-row gap-4 w-full">
+                <div className="grid grid-cols-1 lg:grid-cols-3 grid-flow-row gap-3 w-full">
                     <Link
                         href="https://campsite.chat"
                         target="_blank"
-                        className="w-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start col-span-2 "
+                        className="w-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start col-span-1 lg:col-span-2"
                     >
                         <div className="top-0 left-0 right-0 w-full backdrop-blur">
                             <div className="absolute top-0 w-full p-6">
@@ -103,8 +103,11 @@ export default function Home() {
                             </div>
                         </div>
                     </Link>
-                    <div className="flex flex-col gap-4 items-center">
-                        <button className="w-full h-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start">
+                    <div className="flex flex-col gap-3 items-center w-full">
+                        <Link
+                            href="https://campsite.chat"
+                            className="w-full h-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start"
+                        >
                             <div className="top-0 left-0 right-0 w-full backdrop-blur">
                                 <div className="absolute top-0 w-full p-6">
                                     <h1 className="text-3xl font-bold text-white">
@@ -127,7 +130,7 @@ export default function Home() {
                                     </p>
                                 </div>
                             </div>
-                        </button>
+                        </Link>
                         <Link
                             href="/history"
                             className="w-full h-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start"

@@ -1,3 +1,8 @@
+import Link from "next/link";
+import Image from "next/image";
+import Icons from "@/components/icons";
+import ProjectCard from "./card";
+
 export default function ProjectsPage() {
     return (
         <>
@@ -13,6 +18,10 @@ export default function ProjectsPage() {
                                 on, or currently working on.
                             </p>
                         </div>
+                    </div>
+                    <div className="grid grid-cols-2 gap-4">
+
+                        <ProjectCard name="Campsite" summary="A new communication platform built from the ground up." img="/campsite-banner.png" year={2024} deploy_url="https://campsite.chat" />
                     </div>
                 </div>
             </main>
