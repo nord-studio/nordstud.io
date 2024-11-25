@@ -53,6 +53,7 @@ export default function RootLayout({
                 literata.variable,
                 jetbrainsMono.variable
             )}
+            suppressHydrationWarning
         >
             <head />
             <body
@@ -60,21 +61,21 @@ export default function RootLayout({
                     "min-h-screen font-inter w-full bg-neutral-100 dark:bg-neutral-900 text-black dark:text-white"
                 }
             >
-                <ThemeProvider
-                    attribute="class"
-                    defaultTheme="system"
-                    enableSystem
-                    disableTransitionOnChange
-                >
-                    <TooltipProvider delayDuration={150} skipDelayDuration={0}>
+                <TooltipProvider delayDuration={150} skipDelayDuration={0}>
+                    <ThemeProvider
+                        attribute="class"
+                        defaultTheme="system"
+                        enableSystem
+                        disableTransitionOnChange
+                    >
                         <main className="flex flex-col items-center w-full">
                             <div className="flex flex-col max-w-[1200px] w-full">
                                 <Navbar />
                                 {children}
                             </div>
                         </main>
-                    </TooltipProvider>
-                </ThemeProvider>
+                    </ThemeProvider>
+                </TooltipProvider>
             </body>
         </html>
     );

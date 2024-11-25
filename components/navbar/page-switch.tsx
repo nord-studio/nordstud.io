@@ -82,7 +82,7 @@ export default function PageSwitch() {
                 )}
             >
                 {tabs.map((item, i) => (
-                    <Link href={item.url}>
+                    <Link href={item.url} key={i}>
                         <button
                             key={i}
                             ref={(el) => {
