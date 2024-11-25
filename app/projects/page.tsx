@@ -1,6 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
-import Icons from "@/components/icons";
 import ProjectCard from "./card";
 
 export default function ProjectsPage() {
@@ -20,8 +17,21 @@ export default function ProjectsPage() {
                         </div>
                     </div>
                     <div className="grid grid-cols-2 gap-4">
-
-                        <ProjectCard name="Campsite" summary="A new communication platform built from the ground up." img="/campsite-banner.png" year={2024} deploy_url="https://campsite.chat" />
+                        <ProjectCard
+                            name="Campsite"
+                            summary="Campsite is a new communication platform built from the ground up with Rust and TypeScript to bring you a secure, fast, and sleek chat app."
+                            img="/campsite-banner.png"
+                            year={2024}
+                            deploy_url="https://campsite.chat"
+                        />
+                        <ProjectCard
+                            name="Katarogu"
+                            summary="Katarogu is a free, open-source and community driven manga and anime tracking service built as an open and modern alternative to existing services like MAL and MyAniList."
+                            img="/katarogu-banner.png"
+                            year={2024}
+                            deploy_url="https://katarogu.moe"
+                            github_url="https://github.com/nord-studio/katarogu"
+                        />
                     </div>
                 </div>
             </main>

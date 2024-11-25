@@ -76,19 +76,19 @@ export default function Home() {
                 </div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 grid-flow-row gap-3 w-full">
                     <Link
-                        href="https://campsite.chat"
+                        href="https://katarogu.moe"
                         target="_blank"
                         className="w-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start col-span-1 lg:col-span-2"
                     >
                         <div className="top-0 left-0 right-0 w-full backdrop-blur">
                             <div className="absolute top-0 w-full p-6">
                                 <h1 className="text-3xl font-bold text-white">
-                                    Campsite
+                                    Katarogu
                                 </h1>
                             </div>
                         </div>
                         <Image
-                            src="/campsite-banner.png"
+                            src="/katarogu-banner.png"
                             alt="blog post"
                             height={400}
                             width={800}
@@ -97,8 +97,7 @@ export default function Home() {
                         <div className="bottom-0 left-0 right-0 w-full backdrop-blur">
                             <div className="absolute bottom-0 w-full p-4 text-white">
                                 <p>
-                                    Our first product, a modern and beautiful
-                                    chat application.
+                                    A free, open-source and community driven manga and anime tracking service.
                                 </p>
                             </div>
                         </div>
@@ -125,8 +124,7 @@ export default function Home() {
                             <div className="bottom-0 left-0 right-0 w-full backdrop-blur">
                                 <div className="absolute bottom-0 w-full p-4">
                                     <p className="text-white">
-                                        Our first product, a modern and
-                                        beautiful chat application.
+                                        Campsite is a new communication platform built from the ground up
                                     </p>
                                 </div>
                             </div>

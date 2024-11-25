@@ -14,6 +14,11 @@ export default function BlogPage() {
                             </p>
                         </div>
                     </div>
+                    <div className="my-16 px-2 flex flex-col w-full items-center">
+                        <h2 className="text-xl font-bold">
+                            Nothing here yet. Check back later for updates!
+                        </h2>
+                    </div>
                 </div>
             </main>
         </>

@@ -41,12 +41,12 @@ export default function HistoryPage() {
                                     </span>
                                 </div>
                             </div>
-
                             <Image
                                 src="/history/book-front.png"
                                 alt="Book Front"
                                 width={600}
                                 height={800}
+                                className="rounded-lg border-2 border-black/10 dark:border-white/10"
                             />
                         </div>
                         <div className="grid grid-cols-2 grid-flow-row gap-16">
@@ -55,6 +55,7 @@ export default function HistoryPage() {
                                 alt="Logo Designing"
                                 width={600}
                                 height={800}
+                                className="rounded-lg border-2 border-black/10 dark:border-white/10"
                             />
                             <div className="flex flex-col gap-4 items-start h-full">
                                 <div className="flex flex-col gap-4 justify-between items-start flex-1">
@@ -142,6 +143,7 @@ export default function HistoryPage() {
                                 alt="Book Front"
                                 width={600}
                                 height={800}
+                                className="rounded-lg border-2 border-black/10 dark:border-white/10"
                             />
                         </div>
                         <div className="grid grid-cols-2 grid-flow-row gap-16">
@@ -150,6 +152,7 @@ export default function HistoryPage() {
                                 alt="Logo Designing"
                                 width={600}
                                 height={800}
+                                className="rounded-lg border-2 border-black/10 dark:border-white/10"
                             />
                             <div className="flex flex-col gap-4 items-start h-full">
                                 <div className="flex flex-col gap-4 justify-between items-start flex-1">
