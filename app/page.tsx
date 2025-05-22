@@ -1,150 +1,43 @@
+import MasonryGrid from "@/app/masonry";
 import Icons from "@/components/icons";
-import Image from "next/image";
+import { ThemeToggle } from "@/components/theme/toggle";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Balancer } from "react-wrap-balancer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center w-full">
-      <div className="flex flex-col gap-8 px-6 py-8 w-full">
-        <div className="flex flex-row gap-2 sm:gap-4">
-          <div className="flex flex-col items-start">
-            <small className="text-sm text-neutral-500">
-              Since 2020 • aka Nordic Studio
-            </small>
-            <p className="items-center w-full text-2xl font-bold tracking-[0.010em] font-sora sm:text-4xl">
-              <Balancer>
-                a<span className="text-neutral-500 italic pr-1"> boutique</span>{" "}
-                software studio building{" "}
-                <span className="text-neutral-500">robust</span> and{" "}
-                <span className="text-neutral-500">beautiful </span>
-                apps. creators of{" "}
-                <Link
-                  href="https://campsite.chat"
-                  target="_blank"
-                  className="w-fit flex gap-2"
-                >
-                  <span className="">campsite</span>
-                  <Icons.Campsite className="w-full h-8 pt-2" />
-                </Link>
-              </Balancer>
-            </p>
-          </div>
+    <main className="flex flex-row justify-between w-full min-h-screen">
+      <div className="flex flex-col min-h-screen-nav md:min-h-screen md:justify-between md:max-w-[500px] md:border-r">
+        <div className="flex flex-row gap-2 items-center justify-between p-4 md:p-6 border-b md:border-0">
+          <Icons.Nord className="size-8" />
+          <ThemeToggle />
         </div>
-
-        <div className="flex-row justify-between hidden pt-4 sm:flex grid-cols-3 gap-28">
-          <div className="flex flex-col gap-2">
-            <div className="flex flex-row gap-2 items-center w-fit">
-              <Icons.Shield />
-              <p className="text-xl font-semibold">Security</p>
+        <div className="flex flex-col min-h-screen-nav md:min-h-fit h-full">
+          <MasonryGrid className="flex md:hidden" />
+          <div className="flex flex-col gap-8 items-start px-8 pb-8 pt-2 justify-end h-fit md:h-full">
+            <div className="flex flex-col gap-4 items-start">
+              <h1 className="text-5xl xs:text-6xl font-black tracking-tight">hi. we are <br /> nord studio.</h1>
+              <p className="text-xl text-neutral-500 dark:text-neutral-400">
+                a boutique software studio building <b>robust</b> and <span className="font-literata">beautiful</span> apps.
+                lead by a group of developers who care.
+              </p>
             </div>
-            <p className="text-neutral-500 dark:text-neutral-400">
-              Everything that we build uses modern security standards. We take
-              security very seriously.
-            </p>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="flex flex-row gap-2 items-center w-fit">
-              <Icons.Pencil />
-              <p className="text-xl font-semibold">Design</p>
+            <div className="flex flex-row gap-2 items-center w-full">
+              <Link href="https://github.com/nord-studio" target="_blank" className="w-full">
+                <Button className="w-full font-semibold">
+                  our work
+                </Button>
+              </Link>
+              <Link href="/discord" target="_blank" className="w-full">
+                <Button className="w-full font-semibold" variant="outline">
+                  join our community
+                </Button>
+              </Link>
             </div>
-            <p className="text-neutral-500 dark:text-neutral-400">
-              We strive to make our products as bold as possible. We believe
-              that design in a key factor in the success of a project.
-            </p>
-          </div>
-          <div className="flex flex-col gap-2">
-            <div className="flex flex-row gap-2 items-center w-fit">
-              <Icons.Zap />
-              <p className="text-xl font-semibold">Speed</p>
-            </div>
-            <p className="text-neutral-500 dark:text-neutral-400">
-              Just because our products are beautiful, doesn't mean they're
-              slow. You get the best of both worlds.
-            </p>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 grid-flow-row gap-3 w-full">
-          <Link
-            href="https://campsite.chat"
-            target="_blank"
-            className="w-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start col-span-1 lg:col-span-2"
-          >
-            <div className="top-0 left-0 right-0 w-full backdrop-blur">
-              <div className="absolute top-0 w-full p-6">
-                <h1 className="text-3xl font-bold text-white">Campsite</h1>
-              </div>
-            </div>
-            <Image
-              src="/campsite-banner.webp"
-              alt="blog post"
-              height={400}
-              width={800}
-              className="flex-1 w-full h-full object-cover rounded-lg"
-            />
-            <div className="bottom-0 left-0 right-0 w-full backdrop-blur">
-              <div className="absolute bottom-0 w-full p-4 text-white">
-                <p>
-                  A new communication platform built from the ground up with
-                  Rust and TypeScript to bring you a secure, fast, and sleek
-                  chat app.
-                </p>
-              </div>
-            </div>
-          </Link>
-          <div className="flex flex-col gap-3 items-center w-full">
-            <Link
-              href="https://katarogu.moe"
-              className="w-full h-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start"
-            >
-              <div className="top-0 left-0 right-0 w-full backdrop-blur">
-                <div className="absolute top-0 w-full p-6">
-                  <h1 className="text-3xl font-bold text-white">Katarogu</h1>
-                </div>
-              </div>
-              <Image
-                src="/katarogu-banner.png"
-                alt="blog post"
-                height={400}
-                width={800}
-                className="flex-1 w-full h-full object-cover rounded-lg"
-              />
-              <div className="bottom-0 left-0 right-0 w-full backdrop-blur">
-                <div className="absolute bottom-0 w-full p-4">
-                  <p className="text-white">
-                    A free, open-source and community driven manga and anime
-                    tracking service.
-                  </p>
-                </div>
-              </div>
-            </Link>
-            <Link
-              href="https://miru.nordstud.io"
-              className="w-full h-full border border-black/10 dark:border-white/10 flex flex-col p-0 m-0 rounded-lg text-start"
-            >
-              <div className="top-0 left-0 right-0 w-full backdrop-blur">
-                <div className="absolute top-0 w-full p-6">
-                  <h1 className="text-3xl font-bold text-white">Miru</h1>
-                </div>
-              </div>
-              <Image
-                src="/miru-banner.webp"
-                alt="blog post"
-                height={400}
-                width={800}
-                className="w-full h-full object-center object-cover rounded-lg"
-              />
-              <div className="bottom-0 left-0 right-0 w-full backdrop-blur">
-                <div className="absolute bottom-0 w-full p-4 text-white">
-                  <p>
-                    Our first product, a modern and beautiful chat application.
-                  </p>
-                </div>
-              </div>
-            </Link>
           </div>
         </div>
       </div>
+      <MasonryGrid className="hidden md:flex" />
     </main>
   );
 }
