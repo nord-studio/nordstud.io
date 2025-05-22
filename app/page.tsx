@@ -12,7 +12,7 @@ export default function Home() {
           <Icons.Nord className="size-8" />
           <ThemeToggle />
         </div>
-        <div className="flex flex-col min-h-screen-nav md:min-h-fit h-full">
+        <div className="flex flex-col md:min-h-fit h-full">
           <MasonryGrid className="flex md:hidden" />
           <div className="flex flex-col gap-8 items-start px-8 pb-8 pt-2 justify-end h-fit md:h-full">
             <div className="flex flex-col gap-4 items-start">

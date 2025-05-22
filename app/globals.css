@@ -47,7 +47,7 @@
 	--font-mono: var(--font-jetbrains-mono);
 
 	--breakpoint-xs: 30rem;
-	--spacing-screen-nav: calc(100vh - 69px);
+	--spacing-screen-nav: calc(100dvh - 69px);
 }
 
 :root {

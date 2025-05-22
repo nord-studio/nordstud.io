@@ -22,8 +22,8 @@ export interface Item {
 
 export function ChildItem({ index, width, data }: { index: number; width: number; data: Item }) {
 	return (
-		<div className="flex flex-col items-center border rounded-md w-fit h-fit p-2 bg-neutral-900" key={index}>
-			<Image src={data.asset} alt="Miru" className={`w-[${width}] h-fit object-cover rounded-md`} width={width} height={900} />
+		<div className="flex flex-col items-center border rounded-md w-fit h-fit p-2 bg-neutral-100 dark:bg-neutral-900" key={index}>
+			<Image src={data.asset} alt="Miru" className={`w-[${width}] h-fit object-cover rounded-md`} width={width} height={900} unoptimized />
 			{data.url && (
 				<Link href={data.url} target="_blank" className="w-full">
 					<Button variant="outline" className="w-full mt-2">
