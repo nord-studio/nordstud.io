@@ -2,7 +2,6 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 import { JetBrains_Mono, Literata, Manrope } from "next/font/google";
-import { ThemeProvider } from "@/components/theme/provider";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -35,16 +34,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${manrope.variable} ${literata.variable} ${jetbrainsMono.variable} antialiased min-h-screen font-manrope bg-background text-foreground`}
+        className={`${manrope.variable} ${literata.variable} ${jetbrainsMono.variable} dark antialiased min-h-screen font-manrope bg-background text-foreground`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );
