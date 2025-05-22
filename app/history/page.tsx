@@ -10,7 +10,7 @@ export default function HistoryPage() {
 						<div className="grid grid-cols-2 grid-flow-row gap-16">
 							<div className="flex flex-col gap-4 items-start h-full">
 								<h1 className="text-4xl font-serif font-bold">
-									Chapter 01: "Just a name"
+									Chapter 01: &quot;Just a name&quot;
 								</h1>
 								<div className="flex flex-col gap-4 justify-between items-start flex-1">
 									<p className="text-lg font-medium">
@@ -20,8 +20,8 @@ export default function HistoryPage() {
 										everyday, such as Campsite, a
 										communication platform.
 										<br /> <br />
-										However, it didn't start out like this,
-										in fact, "Nord" started out as a name I{" "}
+										However, it didn&apos;t start out like this,
+										in fact, &quot;Nord&quot; started out as a name I{" "}
 										<Link
 											href="https://tygr.dev"
 											className="text-blue-500 dark:text-blue-400"
@@ -65,15 +65,15 @@ export default function HistoryPage() {
 											school, all students would head to
 											their tutors classroom before the
 											first class started. One morning, I
-											was super early and class didn't
+											was super early and class didn&apos;t
 											start for another 30 minutes.
 											<br /> <br />
 											While trying to think of something
 											to do, I came up with the idea of
 											creating my own brand to represent
-											all the projects I've been working
-											on at home. After googling "words
-											that mean going up", I came across
+											all the projects I&apos;ve been working
+											on at home. After googling &quot;words
+											that mean going up&quot;, I came across
 											one specifc word that peaked my
 											interest:
 										</p>
@@ -85,7 +85,7 @@ export default function HistoryPage() {
 												noun
 											</span>
 											<p>
-												the direction along Earth's
+												the direction along Earth&apos;s
 												surface towards the place where
 												the imaginary rotational axis of
 												the Earth intersects the surface
@@ -93,13 +93,13 @@ export default function HistoryPage() {
 											</p>
 										</div>
 										<p className="text-lg font-medium">
-											I loved it. The word "nord" means
-											"true north", which can be
-											symbolised as "going up". <br />
+											I loved it. The word &quot;nord&quot; means
+											&quot;true north&quot;, which can be
+											symbolised as &quot;going up&quot;. <br />
 											<br />
 											However, a good name needs a good
 											logo. I started off with just the
-											letter "N", and started to play
+											letter &quot;N&quot;, and started to play
 											around with it. The result of which
 											you can see in figure 2.
 										</p>
@@ -115,7 +115,7 @@ export default function HistoryPage() {
 							<div className="flex flex-col gap-4 items-start h-full">
 								<div className="flex flex-col gap-4 justify-between items-start flex-1">
 									<p className="text-lg font-medium">
-										Although I just couldn't get it right,
+										Although I just couldn&apos;t get it right,
 										throughout the day I tended to my
 										notebook trying everything I could to
 										make something that fit. A few pages
@@ -168,12 +168,12 @@ export default function HistoryPage() {
 										As my fellow classmates displayed their
 										excitement about Nord,{" "}
 										<span className="text-neutral-500 dark:text-neutral-400>">
-											(and kept calling me the next "bill
-											gates" or "the guy who made apple")
+											(and kept calling me the next &quot;bill
+											gates&quot; or &quot;the guy who made apple&quot;)
 										</span>
 										, my own excitement grew with this new
 										logo. It was at this point when I
-										figured that I didn't want to keep Nord
+										figured that I didn&apos;t want to keep Nord
 										as just a name. I wanted something more.
 									</p>
 									<span className="text-neutral-500 dark:text-neutral-400 font-mono">
