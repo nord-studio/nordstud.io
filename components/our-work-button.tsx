@@ -162,6 +162,11 @@ function WarpModal({ onClose, size }: WarpModalProps) {
 								<Icons.Katarogu className="size-5" /> Katarogu
 							</Button>
 						</Link>
+						<Link href="https://github.com/nord-studio/ripojitori" className="w-full">
+							<Button variant="outline" className="w-full">
+								<Icons.Ripojitori className="size-5" /> Ripojitori
+							</Button>
+						</Link>
 						<hr />
 						<Link href="https://github.com/nord-studio" className="w-full">
 							<Button variant="outline" className="w-full">
