@@ -83,23 +83,6 @@ interface WarpModalProps {
 }
 
 function WarpModal({ onClose, size }: WarpModalProps) {
-	const transition = {
-		duration: 0.35,
-		ease: [0.59, 0, 0.35, 1],
-	}
-
-	const enteringState = {
-		rotateX: 0,
-		skewY: 0,
-		scaleY: 1,
-		scaleX: 1,
-		y: 0,
-		transition: {
-			...transition,
-			y: { type: "spring", visualDuration: 0.7, bounce: 0.2 },
-		},
-	}
-
 	const exitingState = {
 		rotateX: -5,
 		skewY: -1.5,
@@ -127,15 +110,32 @@ function WarpModal({ onClose, size }: WarpModalProps) {
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				exit={{ opacity: 0 }}
-				transition={transition}
+				transition={{
+					duration: 0.35,
+					ease: [0.59, 0, 0.35, 1],
+				}}
 			>
 				<motion.div
 					className="bg-background border border-border rounded-lg shadow-lg w-full max-w-md mx-auto p-6 z-50"
 					onClick={(e) => e.stopPropagation()}
 					initial={exitingState}
-					animate={enteringState}
+					animate={{
+						rotateX: 0,
+						skewY: 0,
+						scaleY: 1,
+						scaleX: 1,
+						y: 0,
+						transition: {
+							duration: 0.35,
+							ease: [0.59, 0, 0.35, 1],
+							y: { type: "spring", visualDuration: 0.7, bounce: 0.2 },
+						},
+					}}
 					exit={exitingState}
-					transition={transition}
+					transition={{
+						duration: 0.35,
+						ease: [0.59, 0, 0.35, 1],
+					}}
 					style={{
 						transformPerspective: 1000,
 						originX: 0.5,

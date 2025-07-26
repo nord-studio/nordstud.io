@@ -1,0 +1,10 @@
+.next
+.git
+node_modules
+.dockerignore
+.gitignore
+components.json
+Dockerfile
+eslint.config.mjs
+next-env.d.ts
+README.md
