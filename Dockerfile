@@ -38,4 +38,4 @@ ENV HOSTNAME=0.0.0.0
 ENV PORT=3000
 
 USER nextjs
-CMD ["node", "./app/server.js"]
+CMD ["node", "server.js"]
